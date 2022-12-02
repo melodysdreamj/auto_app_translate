@@ -1,16 +1,10 @@
-## app_auto_translation
+# Auto App Translate
+It is a library that translates apps into 80 languages and automates settings.
 
-A auto translate app library that:
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/melodysdren)
 
-- catches programming errors at compile time rather than
-  at runtime
-- removes nesting for listening/combining objects
-- ensures that the code is testable
-
-## Getting started
-
-### 1. setting your project pubspec.yaml
-
+## How to Use?
+### 1. Setup the config file
 ```yaml
 dependencies:
   easy_localization: ^3.0.2-dev
@@ -22,13 +16,13 @@ flutter:
     - assets/localization.csv
 ```
 
-### 3. if the assets folder does not exist, create it and download the following lozalization.csv files into it.
+### 2. Create the asset folder and insert the localization.csv file.
 ![](https://user-images.githubusercontent.com/21379657/205231466-5e0ae6f5-c7a0-4ce7-a24b-e9e07110bed8.png)
 <br>
 lozalization.csv file [download](https://github.com/melodysdreamj/app_auto_translation/files/10138723/localization.csv)
 
 
-### 4. Apply the easy_localization library. Please refer to the [official documentation](https://pub.dev/packages/easy_localization).
+### 3. Config easy_localization library. Please refer to the [official documentation](https://pub.dev/packages/easy_localization).
 ```dart
 import 'package:app_auto_translation/callable/core_my/my_language_code/entity/flutter_support_language_locale.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -61,11 +55,12 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-### 5. Fill in the localization file. Fill in str for the key value and the standard language (start translate language) column.
+### 4. Fill in the localization file. 
+Fill in str for the key value and the standard language (start translate language) column.<br/>
 ![](https://user-images.githubusercontent.com/21379657/205232336-b6d8c138-50e9-4af7-8f1d-19f312473097.png)
 
 
-### 6. Create the string you want to translate as follows.
+### 5. Translate tr()
 ![](https://user-images.githubusercontent.com/21379657/205235871-075593cc-f233-46b2-a77c-f21335dcc2cf.png)
 ```dart
 import 'package:easy_localization/easy_localization.dart';
@@ -75,7 +70,8 @@ tr('hello world')
 
 
 
-### 6. Create a dart file in your project and paste the code below. Location doesn't matter.
+### 6. Create a dart file in your project and paste the code below. 
+Location doesn't matter.<br/>
 ```dart
 import 'package:auto_app_translate/auto_app_translate.dart';
 
