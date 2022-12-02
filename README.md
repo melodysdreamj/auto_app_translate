@@ -9,18 +9,14 @@ A auto translate app library that:
 
 ## Getting started
 
-### 1. install library on your project pubspec.yaml
+### 1. setting your project pubspec.yaml
 
 ```yaml
 dependencies:
   easy_localization: ^3.0.2-dev
   easy_localization_loader: ^1.0.0
   app_auto_translation: ^0.0.1
-```
-
-### 2. and enable csv localized file path.
-
-```yaml
+  
 flutter:
   assets:
     - assets/localization.csv
@@ -69,6 +65,15 @@ class MyApp extends StatelessWidget {
 ![](https://user-images.githubusercontent.com/21379657/205232336-b6d8c138-50e9-4af7-8f1d-19f312473097.png)
 
 
+### 6. Create the string you want to translate as follows.
+![](https://user-images.githubusercontent.com/21379657/205235871-075593cc-f233-46b2-a77c-f21335dcc2cf.png)
+```dart
+import 'package:easy_localization/easy_localization.dart';
+
+tr('hello world')
+```
+
+
 
 ### 6. Create a dart file in your project and paste the code below. Location doesn't matter.
 ```dart
@@ -97,7 +102,6 @@ For a guide to getting the Google Translate api key, please refer to [this docum
 
 ### 7. Run the file. The translation will be completed in the csv file.
 ![](https://user-images.githubusercontent.com/21379657/205233138-7a4a2492-43ab-4b71-aa82-ff1598ae189f.png)
-
 
 ### 8. Check out your app translated into dozens of languages :)
 
