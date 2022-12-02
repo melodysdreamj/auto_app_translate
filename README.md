@@ -10,7 +10,7 @@ It is a library that translates apps into 80 languages and automates settings.
 dependencies:
   easy_localization: ^3.0.2-dev
   easy_localization_loader: ^1.0.0
-  app_auto_translation: ^0.1.6
+  app_auto_translation: ^0.1.7
   
 flutter:
   assets:
@@ -88,7 +88,7 @@ main() {
     skipStr: [],
     
     // csv file path
-    appAssetsCsvPath: 'assets/localization.done.csv',
+    appAssetsCsvPath: 'assets/localization.csv',
     
     // google translate api key (https://translatepress.com/docs/automatic-translation/generate-google-api-key/)
     apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
