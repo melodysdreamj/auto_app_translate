@@ -10,7 +10,7 @@ It is a library that translates apps into 80 languages and automates settings.
 dependencies:
   easy_localization: ^3.0.2-dev
   easy_localization_loader: ^1.0.0
-  app_auto_translation: ^0.0.1
+  app_auto_translation: ^0.1.6
   
 flutter:
   assets:
@@ -35,7 +35,7 @@ void main() async {
   runApp(
     EasyLocalization(
         supportedLocales: flutterLocalizeSupportLanguagesLocale,
-        path: 'assets/localization.done.csv', 
+        path: 'assets/localization.csv', 
         assetLoader: CsvAssetLoader(), // <- important option for translation
         fallbackLocale: const Locale('en', 'US'),
         child: const MyApp()
@@ -61,7 +61,7 @@ Fill in str for the key value and the standard language (start translate languag
 ![](https://user-images.githubusercontent.com/21379657/205302110-bc47084e-dc24-4a6e-b9f6-2fed460de511.png)
 
 
-### 5. Translate tr()
+### 5. use tr() in your code for localization.
 ![](https://user-images.githubusercontent.com/21379657/205302122-601141a6-bee3-42cd-bd23-e4dcc85f8138.png)
 ```dart
 import 'package:easy_localization/easy_localization.dart';
