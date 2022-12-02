@@ -1,5 +1,6 @@
 # Auto App Translate
 It is a library that translates apps into 80 languages and automates settings.
+![](https://user-images.githubusercontent.com/21379657/205305607-951f2eb9-700a-418d-a276-2927e158e9c8.jpg)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/melodysdren)
 
@@ -100,6 +101,5 @@ For a guide to getting the Google Translate api key, please refer to [this docum
 ![](https://user-images.githubusercontent.com/21379657/205302139-b8c667f7-1dd6-446d-bfab-048633935b92.png)
 
 ### 8. Check out apps translated into more than 80 languages :)
-![](https://user-images.githubusercontent.com/21379657/205305607-951f2eb9-700a-418d-a276-2927e158e9c8.jpg)
 
 
