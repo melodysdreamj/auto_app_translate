@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
 ```
 
 ### 4. Fill in the localization file. 
-Fill in str for the key value and the standard language (start translate language) column.<br/>
+Fill in str for the key value and the standard language (start translate language) column.
 ![](https://user-images.githubusercontent.com/21379657/205302110-bc47084e-dc24-4a6e-b9f6-2fed460de511.png)
 
 
@@ -79,19 +79,19 @@ import 'package:auto_app_translate/auto_app_translate.dart';
 main() {
   AutoAppTranslate.translateAppCsvFile(
     // start translate language
-          startLanguageCode: 'ko',
-
-          // language code to skip translation
-          skipLanguageCodes: [],
-
-          // str to skip translation
-          skipStr: [],
-
-          // csv file path
-          appAssetsCsvPath: 'assets/localization.done.csv',
-
-          // google translate api key (https://translatepress.com/docs/automatic-translation/generate-google-api-key/)
-          apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
+    startLanguageCode: 'en',
+    
+    // language code to skip translation
+    skipLanguageCodes: [],
+    
+    // str to skip translation
+    skipStr: [],
+    
+    // csv file path
+    appAssetsCsvPath: 'assets/localization.done.csv',
+    
+    // google translate api key (https://translatepress.com/docs/automatic-translation/generate-google-api-key/)
+    apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
 }
 ```
 It works even if you don't put the Google Translate api key, but you will soon reach the free limit.<br>
