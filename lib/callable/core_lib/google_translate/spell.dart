@@ -1,7 +1,7 @@
-import 'package:auto_app_translate/callable/core_lib/free_google_translate/spell.dart';
 import 'package:dio/dio.dart';
 
 import '../../core_my/my_language_code/spell.dart';
+import '../free_google_translate/spell.dart';
 
 class GoogleTranslateSpell {
   Future<String> translate(String fromLanguage, String toLanguage, String text,
