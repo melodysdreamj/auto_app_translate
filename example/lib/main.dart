@@ -9,7 +9,7 @@ void main() async {
   runApp(
     EasyLocalization(
         supportedLocales: flutterLocalizeSupportLanguagesLocale,
-        path: 'assets/localization.csv',
+        path: 'assets/localization.done.csv',
         assetLoader: CsvAssetLoader(), // <- this is the important part for app translation
         fallbackLocale: const Locale('en', 'US'),
         child: const MyApp()

@@ -13,13 +13,13 @@ dependencies:
   
 flutter:
   assets:
-    - assets/localization.csv
+    - assets/localization.done.csv
 ```
 
 ### 2. Create the asset folder and insert the localization.csv file.
-![](https://user-images.githubusercontent.com/21379657/205231466-5e0ae6f5-c7a0-4ce7-a24b-e9e07110bed8.png)
+![](https://user-images.githubusercontent.com/21379657/205302098-b05eaa27-3357-4aa1-8ee6-aa1cd8fde92c.png)
 <br>
-lozalization.csv file [download](https://github.com/melodysdreamj/app_auto_translation/files/10138723/localization.csv)
+lozalization.csv file [download](https://github.com/melodysdreamj/auto_app_translate/files/10141449/localization.csv)
 
 
 ### 3. Config easy_localization library. Please refer to the [official documentation](https://pub.dev/packages/easy_localization).
@@ -34,7 +34,7 @@ void main() async {
   runApp(
     EasyLocalization(
         supportedLocales: flutterLocalizeSupportLanguagesLocale,
-        path: 'assets/localization.csv', 
+        path: 'assets/localization.done.csv', 
         assetLoader: CsvAssetLoader(), // <- important option for translation
         fallbackLocale: const Locale('en', 'US'),
         child: const MyApp()
@@ -57,11 +57,11 @@ class MyApp extends StatelessWidget {
 
 ### 4. Fill in the localization file. 
 Fill in str for the key value and the standard language (start translate language) column.<br/>
-![](https://user-images.githubusercontent.com/21379657/205232336-b6d8c138-50e9-4af7-8f1d-19f312473097.png)
+![](https://user-images.githubusercontent.com/21379657/205302110-bc47084e-dc24-4a6e-b9f6-2fed460de511.png)
 
 
 ### 5. Translate tr()
-![](https://user-images.githubusercontent.com/21379657/205235871-075593cc-f233-46b2-a77c-f21335dcc2cf.png)
+![](https://user-images.githubusercontent.com/21379657/205302122-601141a6-bee3-42cd-bd23-e4dcc85f8138.png)
 ```dart
 import 'package:easy_localization/easy_localization.dart';
 
@@ -87,7 +87,7 @@ main() {
           skipStr: [],
 
           // csv file path
-          appAssetsCsvPath: 'assets/localization.csv',
+          appAssetsCsvPath: 'assets/localization.done.csv',
 
           // google translate api key (https://translatepress.com/docs/automatic-translation/generate-google-api-key/)
           apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
@@ -97,10 +97,9 @@ It works even if you don't put the Google Translate api key, but you will soon r
 For a guide to getting the Google Translate api key, please refer to [this document](https://translatepress.com/docs/automatic-translation/generate-google-api-key/).
 
 ### 7. Run the file. The translation will be completed in the csv file.
-![](https://user-images.githubusercontent.com/21379657/205233138-7a4a2492-43ab-4b71-aa82-ff1598ae189f.png)
+![](https://user-images.githubusercontent.com/21379657/205302139-b8c667f7-1dd6-446d-bfab-048633935b92.png)
 
-### 8. Check out your app translated into dozens of languages :)
-
-
+### 8. Check out apps translated into more than 80 languages :)
+![](https://user-images.githubusercontent.com/21379657/205304364-a1ce9534-4c02-4ec9-9043-154cc2b45d83.jpg)
 
 

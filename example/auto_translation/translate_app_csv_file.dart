@@ -13,7 +13,7 @@ main() {
       skipStr: [],
 
       // csv file path
-      appAssetsCsvPath: 'assets/localization.csv',
+      appAssetsCsvPath: 'assets/localization.done.csv',
 
       // google translate api key (https://translatepress.com/docs/automatic-translation/generate-google-api-key/)
       apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
