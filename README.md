@@ -13,7 +13,7 @@ It is a library that translates apps into 80 languages and automates settings.<b
 dependencies:
   easy_localization: ^3.0.2-dev
   easy_localization_loader: ^1.0.0
-  app_auto_translation: ^0.1.7
+  app_auto_translation:
   
 flutter:
   assets:
