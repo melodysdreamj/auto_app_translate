@@ -1,5 +1,8 @@
 # Auto App Translate
-It is a library that translates apps into 80 languages and automates settings.
+[![Pub](https://img.shields.io/pub/v/auto_app_translate.svg)](https://pub.dev/packages/auto_app_translate)
+
+It is a library that translates apps into 80 languages and automates settings.<br/>
+
 ![](https://user-images.githubusercontent.com/21379657/205305607-951f2eb9-700a-418d-a276-2927e158e9c8.jpg)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/melodysdren)
