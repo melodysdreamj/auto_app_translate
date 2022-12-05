@@ -22,13 +22,6 @@ packages:
       relative: true
     source: path
     version: "0.1.9"
-  basic_utils:
-    dependency: transitive
-    description:
-      name: basic_utils
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "5.4.2"
   boolean_selector:
     dependency: transitive
     description:
@@ -99,13 +92,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.2"
-  convert:
-    dependency: transitive
-    description:
-      name: convert
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.1"
   csv:
     dependency: transitive
     description:
@@ -127,13 +113,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.7.8"
-  dio:
-    dependency: transitive
-    description:
-      name: dio
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.0.6"
   easy_localization:
     dependency: "direct main"
     description:
@@ -231,13 +210,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
-  json_annotation:
-    dependency: transitive
-    description:
-      name: json_annotation
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "4.7.0"
   lints:
     dependency: transitive
     description:
@@ -245,13 +217,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
-  logging:
-    dependency: transitive
-    description:
-      name: logging
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.1.0"
   matcher:
     dependency: transitive
     description:
@@ -357,13 +322,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.3"
-  pointycastle:
-    dependency: transitive
-    description:
-      name: pointycastle
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.6.2"
   process:
     dependency: transitive
     description:
@@ -371,13 +329,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.2.4"
-  quiver:
-    dependency: transitive
-    description:
-      name: quiver
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "3.1.0"
   shared_preferences:
     dependency: transitive
     description:

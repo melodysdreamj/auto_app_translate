@@ -9,7 +9,7 @@ void main() async {
   runApp(
     EasyLocalization(
         supportedLocales: flutterLocalizeSupportLanguagesLocale,
-        path: 'assets/localization.done.csv',
+        path: 'assets/localization.csv',
         assetLoader: CsvAssetLoader(), // <- this is the important part for app translation
         fallbackLocale: const Locale('en', 'US'),
         child: const MyApp()
@@ -98,6 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text("auto translate"),
             Text(
               tr('You have pushed the button this many times:'),
             ),
@@ -110,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: tr('Increment') ,
+        tooltip: "Increment" ,
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
