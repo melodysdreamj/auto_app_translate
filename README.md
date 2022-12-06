@@ -20,7 +20,7 @@ dependencies:
   
 flutter:
   assets:
-    - assets/localization.done.csv
+    - assets/localization.csv
 ```
 
 ### 2. Create the asset folder and insert the localization.csv file.
