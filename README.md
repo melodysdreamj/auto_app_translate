@@ -16,7 +16,7 @@
 dependencies:
   easy_localization: ^3.0.2-dev
   easy_localization_loader: ^1.0.0
-  app_auto_translation:
+  auto_app_translate:
   
 flutter:
   assets:
