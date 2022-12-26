@@ -78,7 +78,8 @@ tr('hello world')
 
 
 ### 6. Create a dart file in your project and paste the code below. 
-Location doesn't matter.
+create auto_translation folder in your project root, and create auto_translation.dart file.
+and then copy paste code below.
 ```dart
 import 'package:auto_app_translate/auto_app_translate.dart';
 

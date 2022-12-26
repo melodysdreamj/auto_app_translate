@@ -88,6 +88,7 @@ class FreeGoogleTranslationSpell {
   Future<String> translate(String text,
       {String from = 'auto', String to = 'en'}) async {
     Translation result = await _translate(text, from: from, to: to);
+    print(result.text);
     return result.text;
   }
 
