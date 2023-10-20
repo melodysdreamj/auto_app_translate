@@ -1,6 +1,6 @@
 name: auto_app_translate
 description: It is a library that translates apps into 80 languages and automates settings.
-version: 0.1.16
+version: 0.1.17
 homepage: https://github.com/melodysdreamj/auto_app_translate
 
 environment:
@@ -16,7 +16,7 @@ dependencies:
   dio: ^5.3.3
   basic_utils: ^5.4.4
 
-  http: ^0.13.5
+  http: ^1.1.0
   path: ^1.8.2
 
 dev_dependencies:

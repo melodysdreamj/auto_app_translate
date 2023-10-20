@@ -40,8 +40,8 @@ dependencies:
   auto_app_translate:
     path: ../
 
-  easy_localization: ^3.0.2-dev
-  easy_localization_loader: ^1.0.0
+  easy_localization: ^3.0.3
+  easy_localization_loader: ^2.0.0
 
 dev_dependencies:
   flutter_test:
