@@ -26,7 +26,7 @@ flutter:
 ### 2. Create the asset folder and insert the localization.csv file.
 ![](https://user-images.githubusercontent.com/21379657/205302098-b05eaa27-3357-4aa1-8ee6-aa1cd8fde92c.png)
 <br>
-lozalization.csv file [download](https://github.com/melodysdreamj/auto_app_translate/files/10141449/localization.csv)
+lozalization.csv file [download](https://github.com/melodysdreamj/auto_app_translate/files/13509452/localization.csv)
 
 
 ### 3. Config easy_localization library. Please refer to the [official documentation](https://pub.dev/packages/easy_localization).
