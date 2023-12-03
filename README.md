@@ -14,8 +14,8 @@
 ### 1. Setup the config file
 ```yaml
 dependencies:
-  easy_localization: ^3.0.2-dev
-  easy_localization_loader: ^1.0.0
+  easy_localization: ^3.0.3
+  easy_localization_loader: ^2.0.0
   auto_app_translate:
   
 flutter:
@@ -26,14 +26,15 @@ flutter:
 ### 2. Create the asset folder and insert the localization.csv file.
 ![](https://user-images.githubusercontent.com/21379657/205302098-b05eaa27-3357-4aa1-8ee6-aa1cd8fde92c.png)
 <br>
-lozalization.csv file [download](https://github.com/melodysdreamj/auto_app_translate/files/13509452/localization.csv)
+lozalization.csv file [download](https://github.com/melodysdreamj/auto_app_translate/files/13538212/localization.csv)
 
 
 ### 3. Config easy_localization library. Please refer to the [official documentation](https://pub.dev/packages/easy_localization).
 ```dart
-import 'package:app_auto_translation/callable/core_my/my_language_code/entity/flutter_support_language_locale.dart';
+import 'package:auto_app_translate/callable/core_my/my_language_code/entity/flutter_support_language_locale.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_localization_loader/easy_localization_loader.dart';
+import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -41,10 +42,10 @@ void main() async {
   runApp(
     EasyLocalization(
         supportedLocales: flutterLocalizeSupportLanguagesLocale,
-        path: 'assets/localization.csv', 
+        path: 'assets/localization.csv',
         assetLoader: CsvAssetLoader(), // <- important option for translation
         fallbackLocale: const Locale('en', 'US'),
-        child: const MyApp()
+        child: MyApp()
     ),
   );
 }
@@ -53,10 +54,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-            localizationsDelegates: context.localizationDelegates,
-            supportedLocales: context.supportedLocales,
-            locale: context.locale,
-            home: MyHomePage()
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
+        home: MyHomePage()
     );
   }
 }

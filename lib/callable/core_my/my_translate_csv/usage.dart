@@ -9,7 +9,8 @@ main() async {
       startLanguageCode: "en",
       skipLanguageCodes: ['ko'],
       skipStr: [],
-  apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
+      apiKey: 'INPUT_YOUR_GOOGLE_TRANSLATE_API_KEY');
 
-  await File('./assets/localization.done.csv').writeAsString(myCsvMaker.convertCsvString());
+  await File('./assets/localization.done.csv')
+      .writeAsString(myCsvMaker.convertCsvString());
 }

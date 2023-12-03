@@ -7,6 +7,7 @@ class AutoAppTranslate {
     String? startLanguageCode,
     List<String>? skipLanguageCodes,
     List<String>? skipStr,
+    List<String>? onlyLanguageCodes,
     String? appAssetsCsvPath,
     required String apiKey,
   }) {
@@ -15,6 +16,7 @@ class AutoAppTranslate {
       skipLanguageCodes: skipLanguageCodes,
       skipStr: skipStr,
       appAssetsCsvPath: appAssetsCsvPath,
+      onlyLanguageCodes: onlyLanguageCodes,
       apiKey: apiKey,
     );
   }

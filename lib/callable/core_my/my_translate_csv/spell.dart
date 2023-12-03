@@ -14,6 +14,7 @@ class MyTranslateCsvSpell {
     required String startLanguageCode,
     required List<String> skipLanguageCodes,
     required List<String> skipStr,
+    List<String>? onlyLanguageCodes,
     required String apiKey,
   }) async {
     MyCsv originLocalizationCsvObj =
@@ -37,7 +38,7 @@ class MyTranslateCsvSpell {
 
     //맨 첫줄 만들어준후에
     newVersionTranslateCsv
-        .addRow(await _getFirstRow(startLanguageCode, skipLanguageCodes));
+        .addRow(await _getFirstRow(startLanguageCode, skipLanguageCodes, onlyLanguageCodes));
 
     //row
     for (num i in range(startLangColumn.length)) {
@@ -130,13 +131,13 @@ class MyTranslateCsvSpell {
   }
 
   Future<List> _getFirstRow(
-      String startLanguageCode, List<String> skipLanguageCodes) async {
+      String startLanguageCode, List<String> skipLanguageCodes, List<String>? onlyLanguageCodes) async {
     var firstRow = ['str', startLanguageCode];
     for (var saveLanguage in skipLanguageCodes) {
       if (saveLanguage == 'str' || saveLanguage == startLanguageCode) continue;
       firstRow.add(saveLanguage);
     }
-    for (var supportLanguage in flutterLocalizeSupportLanguages) {
+    for (var supportLanguage in onlyLanguageCodes ?? flutterLocalizeSupportLanguages) {
       if (supportLanguage == 'str' ||
           supportLanguage == startLanguageCode ||
           skipLanguageCodes.contains(supportLanguage)) continue;
